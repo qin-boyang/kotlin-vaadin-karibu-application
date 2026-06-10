@@ -16,5 +16,8 @@ class AppShell : AppShellConfigurator
  */
 fun main() {
     DatabaseConfig.init() // Initialize the database
-    VaadinBoot().run()
+
+    VaadinBoot().apply {
+        setPort(8081) // Configures the port
+    }.run()           // Starts the embedded server
 }
