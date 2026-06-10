@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "2.3.20"
+    kotlin("plugin.serialization") version "2.3.20"
     application
     alias(libs.plugins.vaadin)
 }
@@ -42,6 +43,14 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-dao:0.50.1")
     implementation("org.jetbrains.exposed:exposed-jdbc:0.50.1")
     implementation("com.h2database:h2:2.2.224")
+
+    // Ktor
+    val ktorVersion = "3.2.0"
+    implementation(platform("io.ktor:ktor-bom:$ktorVersion"))
+    implementation("io.ktor:ktor-server-core")
+    implementation("io.ktor:ktor-server-netty")
+    implementation("io.ktor:ktor-server-content-negotiation")
+    implementation("io.ktor:ktor-serialization-kotlinx-json")
 
     // test support
     testImplementation(libs.karibu.testing)

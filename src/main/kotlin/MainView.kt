@@ -13,6 +13,7 @@ import com.vaadin.flow.component.html.Span
 import com.vaadin.flow.component.icon.VaadinIcon
 import com.vaadin.flow.component.button.ButtonVariant
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment
+import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.dao.id.LongIdTable
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
@@ -25,6 +26,7 @@ object Todos : LongIdTable("Todos") {
 }
 
 // Update the Todo data class to match the table structure
+@Serializable
 data class Todo(val id: Long, var text: String, var done: Boolean = false)
 
 @Route("")
