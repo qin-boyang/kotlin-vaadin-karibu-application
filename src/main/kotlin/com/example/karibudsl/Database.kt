@@ -8,9 +8,6 @@ import org.jetbrains.exposed.sql.transactions.transaction
 
 object DatabaseConfig {
     fun init() {
-        // 1. 在连接数据库之前，启动 H2 Web 控制台（端口设为 8082）
-
-
         // 2. 连接到内存数据库
         Database.connect(
             url = "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1",
