@@ -1,7 +1,5 @@
 package com.example.karibudsl.com.example.karibudsl
 
-import com.example.karibudsl.Todo
-import com.example.karibudsl.Todos
 import io.ktor.server.application.*
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.request.*

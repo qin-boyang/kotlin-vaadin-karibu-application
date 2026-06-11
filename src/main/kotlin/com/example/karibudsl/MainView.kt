@@ -1,4 +1,4 @@
-package com.example.karibudsl
+package com.example.karibudsl.com.example.karibudsl
 
 import com.github.mvysny.karibudsl.v10.*
 import com.github.mvysny.kaributools.setPrimary

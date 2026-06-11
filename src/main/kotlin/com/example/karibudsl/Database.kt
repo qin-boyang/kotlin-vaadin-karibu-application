@@ -1,5 +1,6 @@
 package com.example.karibudsl
 
+import com.example.karibudsl.com.example.karibudsl.Todos
 import org.h2.tools.Server // 引入 H2 服务器类
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
